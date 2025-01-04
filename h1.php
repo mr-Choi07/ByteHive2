@@ -5,7 +5,11 @@
   <title>home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:400,700'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:300,400,600'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:300,400,600'><link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Doto:wght@100..900&family=Orbit&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -19,41 +23,43 @@
     <section class="velo-slide">
       
       <!-- Pretitle Hint -->
-      <span class="velo-slider__hint"><span><span>Check Them Bldgs</span></span></span> 
+      <span class="velo-slider__hint"><span><span>ByteHive</span></span></span> 
       <!-- Slide BG -->4
       <div class="velo-slide__bg">      
         <!-- Img -->
         <div class="velo-slide__vid-wrap">
         <video autoplay muted loop class="velo-slide__vid" poster="fallback-image.jpg">
-        <source src="https://www.samsungcareers.com/assets/video/main.mp4" type="video/mp4">
+        <source src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/heroVisual/9b2e2582019300001.mp4" type="video/mp4">
         Your browser does not support the video tag. </video>
         </div>
         </div>
       </div>
+      <!-- https://www.samsungcareers.com/assets/video/main.mp4 -->
+       
     
       <!-- Header -->
       <header class="velo-slide__header">
-        <h3 class="velo-slide__title"><span class="oh"><span>시니어를 디지털 일상으로</span></span><span class="oh"><span>더 가깝게</span></span></h3>
-        <p class="velo-slide__text"><span class="oh"><span>사용자에서 출발한 질문을 통해
-        실질적으로 사용자 문제를 해결할 수 있는
-        사업과 서비스를 고민합니다</span></span></p>
+        <h3 class="velo-slide__title"><span class="oh"><span>시니어를 디지털 일상으로</span></span><span class="oh"><span>더 가깝게, ByteHive</span></span></h3>
+        <p class="velo-slide__text"><span class="oh"><span></span></span></p>
       </header>
     </section>
 
     <!-- Slide -->
     <section class="velo-slide">
       <!-- Pretitle Hint -->
-      <span class="velo-slider__hint"><span><span>What's up Playas</span></span></span> 
+      <span class="velo-slider__hint"><span><span>ByteHive</span></span></span> 
       <!-- Slide BG -->
       <div class="velo-slide__bg">
         <!-- Img -->
-        <figure class="velo-slide__figure" style="background-image: url(https://www.samsungcareers.com/assets/images/img-a-01-home-03.jpg)"></figure>
+        <video autoplay muted loop class="velo-slide__vid" poster="fallback-image.jpg">
+        <source src="https://sgimage.netmarble.com/netmarble/career/v1/pc/img/main/netmarble_HR02_re.mp4" type="video/mp4">
+        Your browser does not support the video tag. </video>
       </div>
     
       <!-- Header -->
       <header class="velo-slide__header">
-        <h3 class="velo-slide__title"><span class="oh"><span>더 나은 세상을 만드는</span></span><span class="oh"><span>ByteHive</span></span></h3>
-        <p class="velo-slide__text"><span class="oh"><span>This slider component thing uses Velocity for enhance animation performance. Nav slides via scroll, click or arrow keys.</span></span></p>
+        <h3 class="velo-slide__title"><span class="oh"><span>세상에 없는 기술과 </span></span><span class="oh"><span>새로운 세계를 향한 도전</span></span></h3>
+        <p class="velo-slide__text"><span class="oh"><span>시대에 맞는 기술을 통해 새로운 관계와 대화 경험을 확장합니다</span></span></p>
         <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#/"><span class="btn-draw__text"><span>View Project</span></span></a></span>
       </header>
     </section>
@@ -61,19 +67,21 @@
     <!-- Slide - with Video -->
     <section class="velo-slide">
       <!-- Pretitle Hint -->
-      <span class="velo-slider__hint"><span><span>Urban Influence</span></span></span> 
+      <span class="velo-slider__hint"><span><span>ByteHive</span></span></span> 
       <!-- Slide BG -->
       <div class="velo-slide__bg">
         <!-- Img -->
-        <figure class="velo-slide__figure" style="background-image: url(https://www.samsungcareers.com/assets/images/img-a-01-home-05.jpg)"></figure>
+        <!-- Img -->
+        <video autoplay muted loop class="velo-slide__vid" poster="fallback-image.jpg">
+        <source src="https://www.samsungcareers.com/assets/video/main.mp4" type="video/mp4">
+        Your browser does not support the video tag. </video>
       </div>
       <!-- Header -->
       <header class="velo-slide__header">
         <h3 class="velo-slide__title"><span class="oh"><span>사람을 이해하는 기술로</span></span><span class="oh"><span>필요한 미래를 더 가깝게 만듭니다</span></span></h3>
-        <p class="velo-slide__text"><span class="oh"><span>Live from the Coop, SOTD rocking, folio and storytelling joint for the Pigeon Wizzy squad. Coo Coo.</span></span></p>
+        <p class="velo-slide__text"><span class="oh"><span>유저와 파트너, 모두가 함께 성장하는 미래를 만들어 갑니다</span></span></p>
         <span class="velo-slide__btn"><a class="btn-draw btn--white" href="home.php"><span class="btn-draw__text"><span>view homepage</span></span></a></span>
       </header>
-    </section>
     
     <!-- Slides Nav -->
     <nav class="velo-slides-nav">

@@ -8,6 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/introduce.js"></script>
     <title>소개</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Doto:wght@100..900&family=Orbit&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 <?php
@@ -49,9 +51,7 @@ ByteHive Entertainment는 Byte coperlation의 사내독립기업(CIC) AI Lab이 
 </textarea>
 </main>
 
-<?php
-include "inc_footer.php";
-?>    
+<?php include "inc_footer.php";?>    
 </body>
 </html>
 

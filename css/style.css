@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .velo-slider__hint > span, .btn-draw {
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: "Montserrat", "Black Han Sans", Helvetica, sans-serif;
   font-size: 0.8em;
   font-weight: 400;
   text-transform: uppercase;
@@ -17,7 +17,7 @@
 body {
   margin: 0;
   width: 100%;
-  font-family: "Montserrat", Georgia, serif;
+  font-family: "Montserrat", "Black Han Sans", Georgia, serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.6;
@@ -29,7 +29,7 @@ body {
 }
 
 body {
-  font-family: "Montserrat", Georgia, serif;
+  font-family: "Montserrat", "Black Han Sans", Georgia, serif;
   line-height: 1.6;
 }
 
@@ -376,13 +376,17 @@ a {
 }
 .velo-slide__text {
   color: #fff;
-  max-width: 35em;
+  max-width: 33em;
   display: block;
-  margin: 1em 0 1.5em 1%;
+  margin: 1em 0 1.0em 1%;
   line-height: 1.8;
   font-weight: 300;
   font-size: 0.9em;
 }
+.velo-slide__text span{
+  font-family: "Orbit", serif;
+}
+
 @media (min-width: 54em) {
   .velo-slide__text {
     font-size: 1.1em;
