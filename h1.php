@@ -39,7 +39,7 @@
     
       <!-- Header -->
       <header class="velo-slide__header">
-        <h3 class="velo-slide__title"><span class="oh"><span>시니어를 디지털 일상으로</span></span><span class="oh"><span>더 가깝게, ByteHive</span></span></h3>
+        <h3 class="velo-slide__title"><span class="oh"><span>세상에 없는 기술과</span></span><span class="oh"><span>새로운 세계를 향한 도전</span></span></h3>
         <p class="velo-slide__text"><span class="oh"><span></span></span></p>
       </header>
     </section>
@@ -58,9 +58,9 @@
     
       <!-- Header -->
       <header class="velo-slide__header">
-        <h3 class="velo-slide__title"><span class="oh"><span>세상에 없는 기술과 </span></span><span class="oh"><span>새로운 세계를 향한 도전</span></span></h3>
+        <h3 class="velo-slide__title"><span class="oh"><span>더나은 미래를 위한 교육 </span></span><span class="oh"><span>확실한 미래, ByteHiveEDU</span></span></h3>
         <p class="velo-slide__text"><span class="oh"><span>시대에 맞는 기술을 통해 새로운 관계와 대화 경험을 확장합니다</span></span></p>
-        <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#/"><span class="btn-draw__text"><span>View Project</span></span></a></span>
+        <span class="velo-slide__btn"><a class="btn-draw btn--white" href="edu.php"><span class="btn-draw__text"><span>View EDUCATION</span></span></a></span>
       </header>
     </section>
     
@@ -78,7 +78,7 @@
       </div>
       <!-- Header -->
       <header class="velo-slide__header">
-        <h3 class="velo-slide__title"><span class="oh"><span>사람을 이해하는 기술로</span></span><span class="oh"><span>필요한 미래를 더 가깝게 만듭니다</span></span></h3>
+        <h3 class="velo-slide__title"><span class="oh"><span>시니어를 디지털 일상으로</span></span><span class="oh"><span>더 가깝게, ByteHive</span></span></h3>
         <p class="velo-slide__text"><span class="oh"><span>유저와 파트너, 모두가 함께 성장하는 미래를 만들어 갑니다</span></span></p>
         <span class="velo-slide__btn"><a class="btn-draw btn--white" href="home.php"><span class="btn-draw__text"><span>view homepage</span></span></a></span>
       </header>

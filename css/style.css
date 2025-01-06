@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .velo-slider__hint > span, .btn-draw {
-  font-family: "Montserrat", "Black Han Sans", Helvetica, sans-serif;
+  font-family: "Montserrat", "Black Han Sans", sans-serif;
   font-size: 0.8em;
   font-weight: 400;
   text-transform: uppercase;
