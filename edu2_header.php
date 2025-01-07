@@ -22,21 +22,42 @@
   }
 }
   ?>
-  
+
+  <?php include 'inc/common.php'; ?>
 <body>
 <div class="container">
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="edu.php" class="d-flex align-items-center mb-5 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <a href="edu2.php" class="d-flex align-items-center mb-5 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <img src="images/logo.svg" alt="#" style="width: 2rem" class="me-2">
           <span class="fs-4">ByteHiveEDU</span>
         </a>
 
         <ul class="nav nav-pills">
-          
-        <li class="nav-item"><a href="home.php" class="nav-link text-black">ByteHive바로가기</a></li>  
-        <li class="nav-item"><a href="login.php" class="nav-link text-black">로그인</a></li>
-        <li class="nav-item"><a href="stipulation.php" class="nav-link active" aria-current="page">회원가입</a></li>
-        </ul>
+        <?php
+        //로그인 상태 체크
+        if(isset($ses_id) && $ses_id != '') {
+        ?>
+        <li class="nav-item"><a href="home.php" class="nav-link text-black">ByteHive바로가기</a></li>
+        <li class="nav-item"><a href="board.php" class="nav-link active" aria-current="page">게시판</a></li>
+        <?php
+        if($ses_level == 10) {    //레벨 10(관리자 레벨)이면 관리자 페이지로
+        ?>
+        <li class="nav-item"><a href="./admin/edu2.php" class="nav-link <?= ($menu_code == 'member') ? 'active': ''; ?>">관리페이지</a></li>
+        <?php
+        } else {
+        ?>  <!--관리자가 아니면 마이페이지로-->
+        <li class="nav-item"><a href="mypage.php" class="nav-link <?= ($menu_code == 'member') ? 'active': ''; ?>">마이페이지</a></li>
+        <?php
+        }
+        ?>
+
+      <li class="nav-item"><a href="./pg/logout.php" class="nav-link <?= ($menu_code == 'login') ? 'active': ''; ?>">로그아웃</a></li>
+      <?php
+        }
+      ?>
+          </ul>
 </div>
+
       </header>
+      

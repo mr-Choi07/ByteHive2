@@ -1,54 +1,34 @@
-<?php include "edu_header.php" ?>
-<?php 
-session_start(); 
-include "db_conn.php";
+<?php
 
-if (isset($_POST['uname']) && isset($_POST['password'])) {
+$g_title = '로그인';
+$js_array = ['js/login.js'];
 
-	function validate($data){
-       $data = trim($data);
-	   $data = stripslashes($data);
-	   $data = htmlspecialchars($data);
-	   return $data;
-	}
+$menu_code = 'login';
 
-	$uname = validate($_POST['uname']);
-	$pass = validate($_POST['password']);
 
-	if (empty($uname)) {
-		header("Location: index.php?error=User Name is required");
-	    exit();
-	}else if(empty($pass)){
-        header("Location: index.php?error=Password is required");
-	    exit();
-	}else{
-		// hashing the password
-        $pass = md5($pass);
+include 'edu_header.php';
 
-        
-		$sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
+?>
+<main class="mx-auto border rounded-2 p-5 d-flex gap-5" style="height:calc(100vh-257px)">
 
-		$result = mysqli_query($conn, $sql);
+<form class="w-25 mt-5 m-auto" action="">
+        <img src="./images/logo.svg" width="72" alt="">
+        <h1 class="h3 md-3">로그인</h1>
+        <div class="form-floating mt-2">
+            <input type="text" class="form-control" id="f_id" placeholder="아이디 입력" autocomplete="off">
+            <label for="f_id">아이디</label>
+        </div>
+        <div class="form-floating mt-2">
+            <input type="password" class="form-control" id="f_pw" placeholder="비밀번호 입력">
+            <label for="f_pw">비밀번호</label>
+        </div>
+        <button class="w-100 mt-2 btn btn-lg btn-primary" id="btn_login" type="button">확인</button>
+    </form>
 
-		if (mysqli_num_rows($result) === 1) {
-			$row = mysqli_fetch_assoc($result);
-            if ($row['user_name'] === $uname && $row['password'] === $pass) {
-            	$_SESSION['user_name'] = $row['user_name'];
-            	$_SESSION['name'] = $row['name'];
-            	$_SESSION['id'] = $row['id'];
-            	header("Location: home.php");
-		        exit();
-            }else{
-				header("Location: index.php?error=Incorect User name or password");
-		        exit();
-			}
-		}else{
-			header("Location: index.php?error=Incorect User name or password");
-	        exit();
-		}
-	}
-	
-}else{
-	header("Location: index.php");
-	exit();
-}
+</main>
+
+
+<?php
+include 'inc_footer.php';
+
+?>

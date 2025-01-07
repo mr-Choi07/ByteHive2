@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/edu.css">
 </head>
 <body>
-<?php include "edu_header.php" ?>
+<?php include "edu2_header.php" ?>
 
 <video autoplay muted loop class="velo-slide__vid" poster="fallback-image.jpg">
         <source src="https://sgimage.netmarble.com/netmarble/career/v1/pc/img/main/netmarble_HR02_re.mp4" type="video/mp4">

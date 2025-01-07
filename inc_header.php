@@ -13,6 +13,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Doto:wght@100..900&family=Orbit&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/font.css">
 </head>
 
@@ -26,8 +27,13 @@
         </a>
 
         <ul class="nav nav-pills">
+        <li class="nav-item"><a href="edu.php" class="nav-link text-black">EDU바로가기</a></li>  
           <li class="nav-item"><a href="introduce.php" class="nav-link text-black">회사소개</a></li>
           <li class="nav-item"><a href="news1.php" class="nav-link text-black">회사소식</a></li>
           <li class="nav-item"><a href="history.php" class="nav-link text-black">연혁</a></li>
+          <li class="nav-item"><a href="services.php" class="nav-link text-black">서비스</a></li>
+          <li class="nav-item"><a href="solution.php" class="nav-link text-black">솔루션</a></li>
+          <li class="nav-item"><a href="recruit.php" class="nav-link text-black">채용</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link text-black">문의하기</a></li>
         </ul>
       </header>

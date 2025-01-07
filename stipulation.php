@@ -2,9 +2,10 @@
 
 $js_array =[ 'js/member.js' ];
 
+$g_title = '회원가입';
+
 include "edu_header.php";
 ?>
-
 
 
 <main class="p-5 border rounded-5">

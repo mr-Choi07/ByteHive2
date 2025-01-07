@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/edu.css">
 </head>
 <body>
-<?php include "edu_header.php" ?>
+<?php include "inc_header.php" ?>
 
 <video autoplay muted loop class="velo-slide__vid" poster="fallback-image.jpg">
         <source src="https://sgimage.netmarble.com/netmarble/career/v1/pc/img/main/netmarble_HR02_re.mp4" type="video/mp4">
@@ -28,6 +28,6 @@
         <p><span>확실한 미래, ByteHiveEDU</span></p>
       </h3>
     </div>
-<?php include "edu_footer.php" ?>
+<?php include "inc_footer.php" ?>
 </body>
 </html>

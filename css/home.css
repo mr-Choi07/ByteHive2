@@ -9,7 +9,7 @@ body {
   .velo-slide__vid {
     width: 80%; /* 동영상 크기 (화면 너비의 80%) */
     height: auto; /* 비율 유지 */
-    border-radius: 30px; /* 둥근 모서리 */
+    border-radius: 50px; /* 둥근 모서리 */
     position: relative;
   }
 
