@@ -1,18 +1,25 @@
 <?php
 
-$js_array =[ 'js/member.js' ];
+// 사용할 JavaScript 파일 목록을 배열로 설정
+$js_array = ['js/member.js'];
 
+// 페이지 제목을 설정
 $g_title = '회원가입';
 
+// 공통 헤더 파일을 포함
 include "edu_header.php";
 ?>
 
-
 <main class="p-5 border rounded-5">
+    <!-- 페이지 제목 -->
     <h1 class="text-center mt-5">회원 약관 및 개인정보 취급방침 동의</h1>
+    
+    <!-- 회원 약관 제목 -->
     <h4>회원 약관</h4>
+    
+    <!-- 회원 약관 내용 (읽기 전용 텍스트 영역) -->
     <textarea name="" id="" cols="30" rows="30" class="form-control" readonly style="resize: none;">
-제 1 장 총칙
+    제 1 장 총칙
     제 1 조 (목적)
         이 약관은「ByteHive」(이하 “사이트”라 칭함)에서 제공하는 인터넷관련서비스(이하 "서비스"라 칭함)를 이용함에 있어 「ByteHive」와 이용자의 권리, 
         의무 및 책임사항을 규정함을 목적으로 합니다.
@@ -39,20 +46,24 @@ include "edu_header.php";
             회원의 피해는 서비스에서 책임지지 않습니다.
     제 4 조 (약관 외 준칙)
         본 약관에 명시되지 아니한 사항에 대해서는 전기통신기본법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 및 
-        기타 관련 법령의 규정에 따릅니다. 제 2장 서비스 이용 계약제 5 조 (서비스 이용 신청)회원으로 가입하여 서비스를 이용하기를 희망하는 자는 
+        기타 관련 법령의 규정에 따릅니다. 제 2장 서비스 이용 계약제 5 조 (서비스 이용 신청)회원으로 가입하여 서비스를 이용하기 희망하는 자는 
         서비스에서 정한 가입 양식에 따라 회원정보를 기입하고, 요청하는 제반 정보(개인인적사항이나 기관정보 등)를 제공하여 이용신청을 합니다.
     </textarea>
 
+    <!-- 회원 약관 동의 체크박스 -->
     <div class="form-check mt-2">
-  <input class="form-check-input" type="checkbox" value="1" id="chk_member1">
-  <label class="form-check-label" for="chk_member1">
-    위 회원 약관에 동의하시겠습니까?
-  </label>
-</div>
+        <input class="form-check-input" type="checkbox" value="1" id="chk_member1">
+        <label class="form-check-label" for="chk_member1">
+            위 회원 약관에 동의하시겠습니까?
+        </label>
+    </div>
 
+    <!-- 개인정보 취급방침 제목 -->
     <h4 class="mt-3">개인정보 취급방침</h4>
+
+    <!-- 개인정보 취급방침 내용 (읽기 전용 텍스트 영역) -->
     <textarea name="" id="" cols="30" rows="30" class="form-control" readonly style="resize: none;">
-제 2 장 서비스 이용
+    제 2 장 서비스 이용
     계약제 5 조 (서비스 이용 신청)
         회원으로 가입하여 서비스를 이용하기를 희망하는 자는 서비스에서 정한 가입 양식에 따라회원정보를 기입하고, 요청하는 
         제반 정보(개인인적사항이나 기관정보 등)를 제공하여 이용신청을 합니다.
@@ -95,28 +106,32 @@ include "edu_header.php";
         ③ 회원은 언제든지 원하는 경우에 서비스에 제공한 개인정보의 수집과 이용에 대한 동의를 철회할 수 있으며,
             동의의 철회는 해지 신청을 함으로써 이루어지게 됩니다.
     제 10 조 (계약 사항의 변경)
-        ① 회원은 고객지원 메뉴를 통해 언제든지 본인의 개인정보를 열람하고 수정할 수 있습니다.
-        ② 회원은 이용신청 시 기재한 사항이 변경되었을 경우 온라인으로 수정을 해야 하며 회원정보를 변경하지 아니하여
-            발생되는 일련의 모든 문제의 책임은 회원에게 있습니다.
+        ① 회원은 가입 시 제공한 정보에 대해 변경이 있을 경우, 즉시 서비스를 통하여 변경해야 합니다.
+        ② 서비스는 정기적으로 제공된 정보를 확인하여 등록한 정보가 변경되었을 경우 회원에게 수정 요청을 할 수 있습니다.
     </textarea>
 
+    <!-- 개인정보 취급방침 동의 체크박스 -->
     <div class="form-check mt-2">
-  <input class="form-check-input" type="checkbox" value="2" id="chk_member2">
-  <label class="form-check-label" for="chk_member2">
-    위 개인정보 취급방침에 동의하시겠습니까?
-  </label>
+        <input class="form-check-input" type="checkbox" value="2" id="chk_member2">
+        <label class="form-check-label" for="chk_member2">
+            위 개인정보 취급방침에 동의하시겠습니까?
+        </label>
+    </div>
 
-  <div class="mt-4 d-flex justify-content-end gap-2">
-    <button class="btn btn-primary" id="btn_member">회원가입</button>
-    <button class="btn btn-secondary">가입취소</button>
-  </div>
+    <!-- 하단 버튼들: 회원가입과 가입취소 버튼 -->
+    <div class="mt-4 d-flex justify-content-end gap-2">
+        <button class="btn btn-primary" id="btn_member">회원가입</button>
+        <button class="btn btn-secondary">가입취소</button>
+    </div>
 
-  <form method="post" name="stipluation_form" action="member_input.php">
-    <input type="hidden" name="chk" value="0">
-  </form>
+    <!-- 회원가입 후 폼 전송용 숨겨진 필드 -->
+    <form method="post" name="stipluation_form" action="member_input.php">
+        <input type="hidden" name="chk" value="0">
+    </form>
 
 </main>
 
 <?php
+// 공통 푸터 파일 포함
 include "edu_footer.php";
 ?>
