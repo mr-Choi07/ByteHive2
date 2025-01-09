@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <!-- 메타 정보 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByteHive - 문의하기</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-white">
+    <!-- 공통 헤더 파일 포함 -->
     <?php include "inc_header.php" ?>
-    
+
+    <!-- 페이지 메인 컨텐츠 -->
     <div class="container py-5">
+        <!-- 페이지 제목 -->
         <h1 class="text-center mb-5">문의하기</h1>
         
-        <!-- 문의 양식 및 연락처 정보 -->
         <div class="row">
-            <!-- 문의 양식 -->
+            <!-- 왼쪽: 문의 양식 -->
             <div class="col-lg-7 mb-5">
                 <div class="card">
                     <div class="card-body">
                         <h2 class="card-title h4 mb-4">문의 양식</h2>
                         <form id="contactForm" action="contact_process.php" method="POST">
+                            <!-- 이름 입력 -->
                             <div class="mb-3">
                                 <label for="name" class="form-label">이름 *</label>
                                 <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                             
+                            <!-- 회사명 입력 -->
                             <div class="mb-3">
                                 <label for="company" class="form-label">회사명</label>
                                 <input type="text" class="form-control" id="company" name="company">
                             </div>
                             
+                            <!-- 이메일 입력 -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">이메일 *</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             
+                            <!-- 연락처 입력 -->
                             <div class="mb-3">
                                 <label for="phone" class="form-label">연락처 *</label>
                                 <input type="tel" class="form-control" id="phone" name="phone" required>
                             </div>
                             
+                            <!-- 문의 유형 선택 -->
                             <div class="mb-3">
                                 <label for="category" class="form-label">문의 유형 *</label>
                                 <select class="form-select" id="category" name="category" required>
@@ -51,11 +61,13 @@
                                 </select>
                             </div>
                             
+                            <!-- 문의 내용 입력 -->
                             <div class="mb-3">
                                 <label for="message" class="form-label">문의 내용 *</label>
                                 <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                             </div>
                             
+                            <!-- 개인정보 수집 동의 -->
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="privacy" required>
                                 <label class="form-check-label" for="privacy">
@@ -63,13 +75,14 @@
                                 </label>
                             </div>
                             
+                            <!-- 제출 버튼 -->
                             <button type="submit" class="btn btn-primary">문의하기</button>
                         </form>
                     </div>
                 </div>
             </div>
             
-            <!-- 연락처 정보 및 FAQ -->
+            <!-- 오른쪽: 연락처 정보 및 FAQ -->
             <div class="col-lg-5">
                 <!-- 연락처 정보 -->
                 <div class="card mb-4">
@@ -96,7 +109,7 @@
                     </div>
                 </div>
 
-                <!-- FAQ -->
+                <!-- 자주 묻는 질문 -->
                 <div class="card">
                     <div class="card-body">
                         <h2 class="card-title h4 mb-4">자주 묻는 질문</h2>
@@ -134,7 +147,10 @@
         </div>
     </div>
 
+    <!-- 공통 푸터 파일 포함 -->
     <?php include "inc_footer.php" ?>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html> 
+</html>
