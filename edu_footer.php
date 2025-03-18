@@ -11,16 +11,16 @@
             <p class="text-muted nav-link mt-2">&copy; 2019 Company, Inc</p>
             
             <!-- 주소 -->
-            <p class="text-muted nav-link mt-2">부산광역시 수영구 광안로41번길 7-1 1층</p>
+            <p class="text-muted nav-link mt-2">부산광역시</p>
             
             <!-- 대표자명 -->
-            <p class="text-muted nav-link mt-2">대표: 최승재</p>
+            <p class="text-muted nav-link mt-2">대표: innocent</p>
             
             <!-- 연락처 -->
-            <p class="text-muted nav-link mt-2">Tel: 010-2164-5040</p>
+            <p class="text-muted nav-link mt-2">Tel: 010-0000-0000</p>
             
             <!-- 이메일 -->
-            <p class="text-muted nav-link mt-2">e-mail: chltmdwo2007@naver.com</p>
+            <p class="text-muted nav-link mt-2">e-mail: naver.com</p>
         </ul>
     </footer>
 </div>
