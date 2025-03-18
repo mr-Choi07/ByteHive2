@@ -5,7 +5,7 @@
             <p class="text-muted nav-link mt-2">부산광역시</p>
             <p class="text-muted nav-link mt-2">대표: innocent</p>
             <p class="text-muted nav-link mt-2">Tel: 010-0000-0000</p>
-            <p class="text-muted nav-link mt-2">e-mail: chltmdwo2007@naver.com</p>
+            <p class="text-muted nav-link mt-2">e-mail:naver.com</p>
           </ul>
         </footer>
       </div>
